@@ -1,1 +1,1 @@
-rsync -vzrtopgq --delete --progress  --exclude-from './exclude.txt' root@jp.muzi198783.club::hexo ./
+rsync -uvzrtopgq --delete --progress  --exclude-from './exclude.txt' root@jp.muzi198783.club::hexo ./
