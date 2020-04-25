@@ -11,14 +11,18 @@
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="math">
-<meta property="og:type" content="website">
-<meta property="og:title" content="blog">
-<meta property="og:url" content="http://blog.muzi198783.club/tags/time/index.html">
+  <meta name="description" content="docker registerdocker 先打tag 在推送 tag 含有地址docker tag 127.0.0.1:5001/image docker images docker frpscloverzrg/frps-dockerdocker run -d –name frp-server -p 7700:7700 -p 8080:8080 -p 7500:7500 -v /root/con">
+<meta name="keywords" content="other">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker">
+<meta property="og:url" content="http://blog.muzi198783.club/2019/09/08/docker/index.html">
 <meta property="og:site_name" content="blog">
+<meta property="og:description" content="docker registerdocker 先打tag 在推送 tag 含有地址docker tag 127.0.0.1:5001/image docker images docker frpscloverzrg/frps-dockerdocker run -d –name frp-server -p 7700:7700 -p 8080:8080 -p 7500:7500 -v /root/con">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-04-24T06:28:40.606Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="blog">
+<meta name="twitter:title" content="docker">
+<meta name="twitter:description" content="docker registerdocker 先打tag 在推送 tag 含有地址docker tag 127.0.0.1:5001/image docker images docker frpscloverzrg/frps-dockerdocker run -d –name frp-server -p 7700:7700 -p 8080:8080 -p 7500:7500 -v /root/con">
   
     <link rel="alternative" href="/atom.xml" title="blog" type="application/atom+xml">
   
@@ -180,60 +184,83 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-
+      <div class="body-wrap"><article id="post-docker" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/21/schedule/" class="archive-article-date">
-  	<time datetime="2019-08-21T07:33:00.000Z" itemprop="datePublished">8月 21</time>
+    <div class="article-meta">
+      <a href="/2019/09/08/docker/" class="article-date">
+  	<time datetime="2019-09-08T07:08:52.000Z" itemprop="datePublished">2019-09-08</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/21/schedule/">
-        time schedule
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
-          <span class="title-pop-out">[置顶]</a>
-        
-      </a>
+  
+    <h1 class="article-title" itemprop="name">
+      docker
+      
     </h1>
   
 
-        <div class="article-info info-on-left">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/time/">time</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/other/">other</a></li></ul>
 	</div>
 
-          
+        
 
-          
-        </div>
+        
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="docker-register"><a href="#docker-register" class="headerlink" title="docker register"></a>docker register</h1><p>docker 先打tag 在推送 tag 含有地址<br>docker tag 127.0.0.1:5001/image docker images</p>
+<h1 id="docker-frps"><a href="#docker-frps" class="headerlink" title="docker frps"></a>docker frps</h1><p>cloverzrg/frps-docker<br>docker run -d –name frp-server -p 7700:7700 -p 8080:8080 -p 7500:7500 -v /root/conf:/conf –restart=always cloverzrg/frps-docker<br># vi /root/conf/frps.ini<br>[common]<br>bind_port = 7700<br>token = lb<br>vhost_http_port = 8080<br>vhost_https_port = 8443</p>
+<p>dashboard_port = 7500<br>dashboard_user = admin<br>dashboard_pwd = 1</p>
+<p>tcp_mux = true<br>max_pool_count = 10</p>
+<p>note that: ipv6 [ipv6自动映射到ipv4]<br>vi /etc/sysctl.conf<br>net.ipv4.ip_forward=1<br>ubuntu:server network-manager restart<br>換句話說，僅因為您僅將其視為IPv6，否則它仍然能夠在IPv4上進行通信，除非您將IPv6設置為僅使用net.ipv6.bindv6only設置綁定到IPv6上。 需要明確的是，net.ipv6.bindv6only應該為0-您可以運行 sysctl net.ipv6.bindv6only 進行驗證。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/08/other_github-project/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          github project
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/09/08/other_note/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">note</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
 
 </div>
       <footer id="footer">
@@ -259,9 +286,9 @@
 		mathjax: true,
 		animate: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}
